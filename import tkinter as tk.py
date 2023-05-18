@@ -1,9 +1,21 @@
 import tkinter as tk
 
-root = tk.Tk()  # crea una finestra
-root.title("La mia finestra")  # imposta il titolo della finestra
+def saluta():
+    nome = entry_nome.get()
+    label_saluto.config(text="Ciao " + nome)
 
-etichetta = tk.Label(root, text="Ciao, mondo!")  # crea una etichetta
-etichetta.pack()  # posiziona l'etichetta nella finestra
+root = tk.Tk()
 
-root.mainloop()  # avvia il ciclo di eventi della finestra
+label_nome = tk.Label(root, text="Inserisci il tuo nome:")
+label_nome.pack()
+
+entry_nome = tk.Entry(root)
+entry_nome.pack()
+
+button_saluta = tk.Button(root, text="Saluta", command=saluta)
+button_saluta.pack()
+
+label_saluto = tk.Label(root)
+label_saluto.pack()
+
+root.mainloop()
