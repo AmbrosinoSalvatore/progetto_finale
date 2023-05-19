@@ -12,7 +12,7 @@ def register_user():
     conn = pymssql.connect(server='192.168.40.16\SQLEXPRESS', user='dilecce.gabriele', password='xxx123##', database='dilecce.gabriele')
 
     # creazione del cursore
-    cursor = conn.cursor()
+    cursor = connxzxzx.cursor()
 
     # inserimento dei dati degli utenti nella tabella
     cursor.execute('INSERT INTO Utenti (Username, Email, Password, ConfermaPassword) VALUES (%s,%s,%s,%s)',
