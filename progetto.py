@@ -18,4 +18,5 @@ button_saluta.pack()
 label_saluto = tk.Label(root)
 label_saluto.pack()
 
+s
 root.mainloop()
